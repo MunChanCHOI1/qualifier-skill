@@ -1,0 +1,14 @@
+# Local work and release artifacts do not belong in the public source package.
+/work/
+/outputs/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pem
+*.key
+*.pdf
+*.zip
+*.log
+.DS_Store
+Thumbs.db
