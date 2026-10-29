@@ -30,15 +30,15 @@ skills/skhynix-qualifier/
 
 ## 적용과 호출
 
-공개 저장소: https://github.com/MunChanCHOI1/skhynix-qualifier-skill
+공개 저장소: https://github.com/MunChanCHOI1/qualifier-skill
 
 공개 저장소 클론이 허용된 제공 환경에서는 다음 명령으로 가져올 수 있습니다.
 
 ```sh
-git clone https://github.com/MunChanCHOI1/skhynix-qualifier-skill.git
+git clone https://github.com/MunChanCHOI1/qualifier-skill.git
 ```
 
-클론만으로 스킬의 자동 등록이 보장되지는 않습니다. 제공 환경의 등록 방법을 사용하거나, Codex에 `skhynix-qualifier-skill/skills/skhynix-qualifier/SKILL.md`를 읽고 필요한 참조 파일과 함께 적용하도록 요청하세요.
+클론만으로 스킬의 자동 등록이 보장되지는 않습니다. 제공 환경의 등록 방법을 사용하거나, Codex에 `qualifier-skill/skills/skhynix-qualifier/SKILL.md`를 읽고 필요한 참조 파일과 함께 적용하도록 요청하세요.
 
 사용이 허용된 환경에서 `skills/skhynix-qualifier` 디렉터리 전체를 해당 환경의 공식 스킬 적용 방법으로 등록하세요. 참조 파일도 함께 필요합니다. 개인 PC 파일 업로드가 제한된 환경에서는 이 패키지의 로컬 사본이나 ZIP을 업로드하지 마세요. 공개 저장소에서 가져오는 경로도 운영 안내에서 허용될 때만 사용합니다.
 
