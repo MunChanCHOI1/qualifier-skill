@@ -1,6 +1,6 @@
 # Requirements
 
-Use when a task is new, materially changed, or insufficiently clear to select an implementation. Stop analysis when the next implementation decision is supported.
+Use when required behavior or deliverables are insufficiently clear to select an implementation. A new task with clear acceptance criteria can proceed directly to implementation. Stop analysis when the next implementation decision is supported.
 
 ## Extract what matters
 
@@ -15,7 +15,7 @@ Treat tutorial screenshots, sample ports, example apps, and example document nam
 
 ## Distinguish evidence from assumptions
 
-Use a compact checklist or table only as large as needed:
+Reuse supplied acceptance criteria and add only missing checks, sources, or material assumptions. Use a compact checklist or table when it helps; a second specification is unnecessary:
 
 | Requirement or decision | Source and certainty | Priority | Observable completion check |
 | --- | --- | --- | --- |
@@ -29,6 +29,17 @@ Use current official rules for permitted actions and the task instructions for d
 First inspect available task evidence. Ask a concise question when the missing answer changes the approach, completion criteria, or permitted action. Proceed with a reversible, disclosed assumption for minor details when the task allows it.
 
 Route business-context questions to the supplied stakeholder or business agent, platform-operation questions to the supplied helper, and technical platform faults to the official reporting route. Where these require UI interaction, ask the participant to perform it; do not automate that interaction.
+
+### Questions for the supplied business agent
+
+Use the authorized in-platform route under [Boundaries](../SKILL.md#boundaries). Select the unresolved question that changes implementation; do not send a fixed questionnaire or contact an external person. These Korean templates are examples, not assumed answers:
+
+- Outcome: "이 결과를 보고 누가 어떤 결정을 내려야 하나요? 반드시 보여야 할 정보는 무엇인가요?"
+- Ambiguous rule: "[문서의 규칙]을 [해석 A]로 이해했습니다. [경계 사례]도 같은 방식으로 처리하나요, 아니면 [해석 B]인가요?"
+- Error handling: "[잘못된 입력]이 있으면 해당 항목만 제외하고 이유를 보여줄까요, 아니면 전체 처리를 중단해야 하나요?"
+- Priority: "필수 [A]와 추가 요청 [B] 중 먼저 완성할 것은 무엇인가요? 현재 안내에서 [A]는 필수이므로 [B]는 추가 범위로 이해해도 될까요?"
+
+Record the actual answer, its source, and the affected criterion in the existing checklist. Turn a confirmed business rule into a concrete input/expected-output check. If no answer arrives, continue independent work and label any reversible assumption; leave a decision that changes mandatory behavior unresolved rather than inventing stakeholder approval. Stakeholder preferences cannot waive explicit task requirements or competition rules.
 
 ## Leave a usable next step
 

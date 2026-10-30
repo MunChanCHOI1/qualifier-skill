@@ -6,13 +6,23 @@ Use after a meaningful implementation change, when a failure appears, and before
 
 - Exercise a representative path from required input to observable output.
 - Include relevant invalid input, failure conditions, and boundary cases based on the actual requirements. Do not generate an exhaustive suite unrelated to the change.
-- Use appropriate project tests, build or lint checks, CLI runs, local data checks, or permitted local endpoint requests. Check that a command has no forbidden external side effects before running it.
+- Use appropriate project tests, build or lint checks, CLI runs, local data checks, or permitted local endpoint requests under [Boundaries](../SKILL.md#boundaries), including its guidance for inspected commands.
 - A running server, successful build, or passing linter alone does not prove the required workflow works. Mock or synthetic results do not establish integration with a real system.
 - When a visual or interactive check is necessary, have the participant use the supplied preview. Do not automate it or capture the exam screen. If manual confirmation is unavailable, record the affected check as not run.
 
+## Map requirements to runnable smoke checks
+
+Map each mandatory behavior to a reproducible check with a representative input and an expected observable result derived from the task. Reuse existing tests first; add a case when coverage is missing or a concrete failure risk needs checking. One existing check may cover several criteria; no separate script, case, or document is required for every row. Use a small local script only when it makes repeated checks easier than manual commands.
+
+For example, a CSV aggregation task might map valid rows to exact totals, malformed input to the required error/exit behavior, and repeated runs to unchanged supplied files. Include the task's actual boundary rules rather than assuming these examples are requirements. Assert outputs and errors, not just exit code zero or server startup. Keep expected results independent of the implementation being tested.
+
+Run the first path's smoke check early, add cases for remaining mandatory behavior, and rerun affected checks after corrections. For behavior that only the participant can observe, record reproducible manual steps and leave it not run until that observation arrives.
+
+Keep test scope tied to requirements and observed risks. Platform-specific optional cases need a concrete reason; they are not a prerequisite for handoff. If an optional check is blocked, record it as not run and continue without expanding permissions. A blocked mandatory check still prevents readiness. Use a permitted workspace location for disposable test fixtures when supported, preserving supplied files and existing data.
+
 ## Record observable evidence
 
-For each necessary check, record enough to understand and, where allowed, repeat it:
+For each necessary check, record enough to understand and, where allowed, repeat it. Existing test output plus a concise summary is sufficient if it contains these fields; the table is optional:
 
 | Criterion | Command, input, or manual steps | Expected and observed result | Status | Evidence source and limit |
 | --- | --- | --- | --- | --- |
