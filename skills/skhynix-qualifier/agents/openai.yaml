@@ -1,4 +1,4 @@
 interface:
   display_name: "SK하이닉스 예선 작업 가이드"
-  short_description: "허용된 과제풀이의 요구사항 정리, 구현, 검증과 제출 준비"
-  default_prompt: "Use $skhynix-qualifier to inspect the permitted task, current artifacts, available tools, and remaining time, then continue through the necessary work to submission readiness."
+  short_description: "요구사항과 구현 원리를 설명하고 참가자 요청에 따라 개발·검증"
+  default_prompt: "Use $skhynix-qualifier to clarify the permitted task with relevant files, brief the implementation principles, and let me request the briefed work before implementing and verifying it."

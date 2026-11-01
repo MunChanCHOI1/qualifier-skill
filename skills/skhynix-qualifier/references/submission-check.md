@@ -16,4 +16,4 @@ Before artifact confirmation, apply [Boundaries](../SKILL.md#boundaries) and reu
 
 A known failure takes precedence over uncertainty; report both. Optional unexecuted checks alone do not block readiness. Fix and recheck when feasible and still authorized.
 
-Report judgment/reason, artifact locations and execution method, required-check results, limits, and the participant's next step concisely. The participant checks the preview, confirms the artifact, and verifies the final receipt. Readiness is not a submission receipt; assistance ends at the cutoff in Boundaries.
+Report judgment/reason, artifact locations and execution method, required-check results, limits, and the participant's next step concisely. While still in permitted task work, recap the implemented input-to-output flow and consequential design limits using the existing briefings; do not introduce quiz predictions or answer scripts. The participant checks the preview, confirms the artifact, and verifies the final receipt. Readiness is not a submission receipt; assistance ends at the cutoff in Boundaries.
